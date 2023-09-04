@@ -12,7 +12,7 @@ A set of functions that's often used with Kaviyes related projects.
 import os, datetime, time, getpass
 
 ___kaviyes_UTILversion___ = '0.1'
-___kaviyes_UTILversionFull____ = 'Version 0.1.0 (September 2023)'
+___kaviyes_UTILversionFull____ = 'Version 0.1.3 (September 2023)'
 
 def Prompt(Message, EnableGetpass: bool = False):
     '''
