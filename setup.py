@@ -1,9 +1,9 @@
 from setuptools import setup, find_packages
 
 NAME = 'kaviyesutil'
-VERSION = '0.1.0'
+VERSION = '0.1.4'
 DESCRIPTION = "A set of functions that's often used with Kaviyes related projects."
-AUTHOR = 'Kaviyes (Karl Vince Reyes)'
+AUTHOR = 'Kaviyes'
 AUTHOR_EMAIL = 'kaviyeslabs@proton.me'
 URL = 'https://github.com/Kaviyes/kaviyesutil'
 LICENSE = 'MIT'
@@ -25,16 +25,16 @@ setup(
         '': ['LICENSE']
     },
     packages=find_packages(),
-    keywords=['utility'],
+    keywords=['utility', 'toolkit'],
     classifiers=[
         'Development Status :: 3 - Alpha',  
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',  
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.x',  
+        'Programming Language :: Python :: 3.11',  
         'Operating System :: Microsoft :: Windows',
-        'Operating System :: UNIX'
-        'Operating System :: MacOS :: MacOS X'
+        'Operating System :: POSIX :: Linux',
+        'Operating System :: MacOS :: MacOS X',
     ],
     install_requires=[ ],
     python_requires='>=3.6',
