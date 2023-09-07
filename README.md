@@ -1,5 +1,3 @@
-
-
 ![Maintained?](https://img.shields.io/badge/Maintained%3F-yes-green.svg) ![Open Issues](https://img.shields.io/github/issues/Kaviyes/kaviyesutil.svg) ![License](https://img.shields.io/github/license/Kaviyes/kaviyesutil.svg)
 <p align="center">
   <img src="https://raw.githubusercontent.com/Kaviyes/kaviyesutil/main/image-kaviyesutilites.png" alt="Kaviyes Utilities" width="450" />
@@ -7,7 +5,7 @@
 
 ### [Experimental] Version 0.1.4 Standard Utility
 
-A toolkit often used with **Kaviyes Related Projects**, Its also ideal for small projects.
+A toolkit often used with **Kaviyes related projects**, Its also ideal for small projects.
 
 ---
 
