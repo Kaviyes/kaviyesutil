@@ -4,7 +4,7 @@
 </p>
 
 ## [Experimental] 
-### Version 0.1.4 Standard Utility
+### Version 0.1.5 Standard Utility
 
 A toolkit often used with **Kaviyes related projects**, Its also ideal for small projects.
 
@@ -40,10 +40,10 @@ kaviyesutil.Terminal('echo Hello Kaviyes!') #quick terminal access
 
 kaviyesutil.sleep(1) #Its from time.sleep()
 ```
+You can get more examples by hovering on the functions (Depends on IDE)
 ## Note
 Some features are untested on the following platforms
 - MacOS
-- Linux
 
 If you see an issue, report it here!
 
