@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 NAME = 'kaviyesutil'
-VERSION = '0.1.5'
+VERSION = '1.0.0'
 DESCRIPTION = "A toolkit often used with Kaviyes related projects, Its also ideal for small projects."
 AUTHOR = 'Kaviyes'
 AUTHOR_EMAIL = 'kaviyeslabs@proton.me'

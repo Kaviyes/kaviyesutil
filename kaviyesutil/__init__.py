@@ -1,12 +1,14 @@
 #Kaviyes
 '''
 ## kaviyesutil
-### [Experimental] Version 0.1.5 Standard Utility
+### [Experimental] Version 1.0.0 Standard Utility
 
 A toolkit often used with Kaviyes related projects, Its also ideal for small projects.
 
 -----
 ### List of available functions:
+    - CloackedLink
+    - ResourcePath
     - FancyText
     - ConvertUnits
     - Countdown
@@ -26,13 +28,52 @@ import getpass as _getpass
 import os as _os
 import datetime as _datetime
 import time as _time
+import sys as _sys
 
-___kaviyes_UTILversion___ = '0.1.5'
-___kaviyes_UTILversionFull____ = 'Version 0.1.5 (September 2023)'
+___kaviyes_UTILversion___ = '1.0.0'
+___kaviyes_UTILversionFull____ = 'Version 1.0.0 (September 2023)'
 
+def CloakedLink(Text, Url, Print: bool = False):
+    '''
+    ### CloakedLink
+    #### create a visually appealing links
 
+    ---
 
-def FancyText(Text: str = '', TextColor: str = 'default', HighlightColor: str = 'default', ReturnText: bool = False):
+    #### Examples
+    ```
+    CloakedLink('visit kaviyes on github!', 'https://github.com/Kaviyes', True)
+    print(CloakedLink('visit kaviyes on github!', 'https://github.com/Kaviyes'))
+    CloakedLink(FancyText('Visit Kaviyes on Github!', 'cyan', 'default', 'underlined', ReturnText=True), 'https://github.com/Kaviyes', Print=True)
+    ```
+    '''
+    if Print:
+        print(f"\033]8;;{Url}\033\\{Text}\033]8;;\033\\")
+    else:
+        return f"\033]8;;{Url}\033\\{Text}\033]8;;\033\\"
+
+def ResourcePath(relative_path):
+    #Credits to max & community
+    '''
+    ### ResourcePath
+    #### Get absolute path to resource, works for dev and for PyInstaller
+
+    ---
+
+    #### Notes
+
+    - Credits to [max & Stackoverflow Community!](https://stackoverflow.com/questions/7674790/bundling-data-files-with-pyinstaller-onefile/13790741#13790741)
+
+    '''
+    try:
+        # PyInstaller creates a temp folder and stores path in _MEIPASS
+        base_path = _sys._MEIPASS
+    except Exception:
+        base_path = _os.path.abspath(".")
+
+    return _os.path.join(base_path, relative_path)
+
+def FancyText(Text: str = '', TextColor: str = 'default', HighlightColor: str = 'default', *Formats, ReturnText: bool = False):
     '''
     ### FancyText
     #### an easy way to customize your text
@@ -49,10 +90,19 @@ def FancyText(Text: str = '', TextColor: str = 'default', HighlightColor: str = 
     - cyan
     - white
 
+    Available formats
+    - bold
+    - italic
+    - underlined
+    - strikethrough
+
     #### Examples
     ```
     FancyText('Hello Kaviyes!', 'red', 'magenta')
     print(FancyText('Hello Kaviyes!', 'red', 'magenta', True))
+    
+    FancyText('Hello Kaviyes!', 'red', 'magenta', 'bold', 'italic')
+    print(FancyText('Hello Kaviyes!', 'red', 'magenta', 'bold', 'italic', ReturnText='True'))
     ```
 
     ---
@@ -87,14 +137,28 @@ def FancyText(Text: str = '', TextColor: str = 'default', HighlightColor: str = 
         'reset': '0'
     }
 
-    if HighlightColor == 'default':
-        FinalText = f"\033[{TextCode.get(TextColor, '39')}m{Text}\033[0m"
-    if HighlightColor:
-        FinalText = f"\033[{TextCode.get(TextColor, '39')};{HighlightCode.get(HighlightColor, '49')}m{Text}\033[0m"
+    FormatCode = {
+        'bold': ';1',
+        'italic': ';3',
+        'underlined': ';4',
+        'strikethrough': ';9'
+    }
+
+    FinalText = f"\033[{TextCode.get(TextColor, '39')}"
+
+    if HighlightColor != 'default':
+        FinalText += f";{HighlightCode.get(HighlightColor, '49')}"
+
+    for formatoption in Formats:
+        if formatoption in FormatCode:
+            FinalText += FormatCode[formatoption]
+
+    FinalText += f'm{Text}\033[0m'
+
 
     if ReturnText:
         return FinalText
-    else: 
+    else:
         print(FinalText)
 
 def ConvertUnits(value, from_unit, to_unit, Precise: bool = False):
