@@ -4,7 +4,7 @@
 </p>
 
 ## [Experimental] 
-### Version 0.1.5 Standard Utility
+### Version 1.0.0 Standard Utility
 
 A toolkit often used with **Kaviyes related projects**, Its also ideal for small projects.
 
