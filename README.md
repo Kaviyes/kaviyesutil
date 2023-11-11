@@ -31,7 +31,7 @@ FUNCTION | DESCRIPTION
 [`decodeHex`](https://github.com/Kaviyes/kaviyesutil#decodeHex) | Decodes Hex into String
 [`encodeHex`](https://github.com/Kaviyes/kaviyesutil#encodeHex) | Encodes String into Hex
 [`terminal`](https://github.com/Kaviyes/kaviyesutil#terminal) | a quick access to terminal
-[`cter`](https://github.com/Kaviyes/kaviyesutil#cter) | Clears the terminal
+[`cter`](https://github.com/Kaviyes/kaviyesutil#cter) | Clears the contents of the terminal screen
 
 ### EXAMPLES
 ### printc
