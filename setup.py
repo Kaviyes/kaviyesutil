@@ -1,8 +1,8 @@
 from setuptools import setup, find_packages
 
 NAME = 'kaviyesutil'
-VERSION = '1.0.0'
-DESCRIPTION = "A toolkit often used with Kaviyes related projects, Its also ideal for small projects."
+VERSION = '2.0.0'
+DESCRIPTION = "A standard kaviyes utility for python thats ideal for small projects and prototypes."
 AUTHOR = 'Kaviyes'
 AUTHOR_EMAIL = 'kaviyeslabs@proton.me'
 URL = 'https://github.com/Kaviyes/kaviyesutil'
@@ -37,5 +37,5 @@ setup(
         'Operating System :: MacOS :: MacOS X',
     ],
     install_requires=[ ],
-    python_requires='>=3.6',
+    python_requires='>=3.10',
 )
