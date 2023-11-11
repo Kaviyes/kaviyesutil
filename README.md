@@ -20,18 +20,18 @@ pip install kaviyesutil -U
 
 FUNCTION | DESCRIPTION
 --------- | ------------
-`printc` | Quick and easy way to customize your text
-`countdown` | A verbose countdown timer
-`cloakedLink` | create a visually appealing links for terminals
-`resourcePath` | Get absolute path to resource, works for dev and for PyInstaller
-`generateCustomID` | Generate own custom ID or use premade formats
-`prompt` | Prompts user with desired message
-`currentTime` | A simplified version of datetime function
-`delay` | a delay function / This function is from time.sleep()
-`decodeHex` | Decodes Hex into String
-`encodeHex` | Encodes String into Hex
-`terminal` | a quick access to terminal
-`cter` | Clears the terminal
+[`printc`](https://github.com/Kaviyes/kaviyesutil#printc) | Quick and easy way to customize your text
+[`countdown`](https://github.com/Kaviyes/kaviyesutil#countdown) | A verbose countdown timer
+[`cloakedLink`](https://github.com/Kaviyes/kaviyesutil#cloakedLink) | create a visually appealing links for terminals
+[`resourcePath`](https://github.com/Kaviyes/kaviyesutil#resourcePath) | Get absolute path to resource, works for dev and for PyInstaller
+[`generateCustomID`](https://github.com/Kaviyes/kaviyesutil#generateCustomID) | Generate own custom ID or use premade formats
+[`prompt`](https://github.com/Kaviyes/kaviyesutil#prompt) | Prompts user with desired message
+[`currentTime`](https://github.com/Kaviyes/kaviyesutil#currentTime) | A simplified version of datetime function
+[`delay`](https://github.com/Kaviyes/kaviyesutil#delay) | a delay function / This function is from time.sleep()
+[`decodeHex`](https://github.com/Kaviyes/kaviyesutil#decodeHex) | Decodes Hex into String
+[`encodeHex`](https://github.com/Kaviyes/kaviyesutil#encodeHex) | Encodes String into Hex
+[`terminal`](https://github.com/Kaviyes/kaviyesutil#terminal) | a quick access to terminal
+[`cter`](https://github.com/Kaviyes/kaviyesutil#cter) | Clears the terminal
 
 ### EXAMPLES
 ### printc
