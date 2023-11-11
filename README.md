@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/Kaviyes/kaviyesutil/main/Kaviyesutil.png" width="410"/>
+[<img src="https://raw.githubusercontent.com/Kaviyes/kaviyesutil/main/Kaviyesutil.png" width="410"/>](https://github.com/Kaviyes/kaviyesutil)
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![MacOS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=apple&logoColor=white)
 
@@ -178,7 +178,9 @@ Links:
 <br>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Kaviyes/kaviyesutil/main/Kaviyes-Text.png" alt="KAVIYES" width="500"/>
+  <a href="https://github.com/Kaviyes/">
+    <img src="https://raw.githubusercontent.com/Kaviyes/kaviyesutil/main/Kaviyes-Text.png" alt="KAVIYES" width="500"/>
+  </a>
 </p>
 
 <br>
