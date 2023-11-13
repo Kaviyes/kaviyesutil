@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 NAME = 'kaviyesutil'
-VERSION = '2.0.0'
+VERSION = '2.0.1'
 DESCRIPTION = "A standard kaviyes utility for python thats ideal for small projects and prototypes."
 AUTHOR = 'Kaviyes'
 AUTHOR_EMAIL = 'kaviyeslabs@proton.me'
