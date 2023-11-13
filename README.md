@@ -135,6 +135,7 @@ terminal('echo Hello Kaviyes!') #Outputs Hello Kaviyes! to terminal
 ### cter
 ```
 cter() # will clear the terminal
+cter("terminal cleared")
 ```
 
 <br>
@@ -144,12 +145,19 @@ cter() # will clear the terminal
 Kaviyesutil version **2.0.0** is no longer compatible with older versions.
 * This is a completely revamped version, and it is not compatible with older versions due to function changes. It is better to download the old version and use it locally if you want to update to the latest version.
 
-Changes in the new version:
+Changes in the new version **2.0.0** - **2.0.1**:
 
-* Renamed FancyText to `printc`.
+**2.0.0**
+* Renamed `FancyText` to `printc`.
 * Removed `ConvertUnits` and `Today` functions.
 * Improved function names.
 * General bug fixes and improvements.
+
+**2.0.1**
+* Fixed print bug on `cloakedLink` function.
+* Added feature on `cter` to leave message after the terminal is cleared.
+
+<br>
 
 Compatibilities:
 
@@ -157,18 +165,17 @@ Compatibilities:
 
 IDE:
 * Visual Studio Code (fully compatible)
-* PyCharm (function description is displayed in raw but still readable)
+* PyCharm & Visual Studio (function description is displayed in raw but still readable)
 * Not tested on other IDEs yet
 
 OS:
 * Android (Termux)
 * Windows (8.1 and later)
 * Linux (Debian and others)
-* macOS (10.15 Catalina or later)
+* macOS (10.15 Catalina and later)
 
 Links:
 * [PyPi](https://pypi.org/project/kaviyesutil/)
-* [Wheelsodex](https://www.wheelodex.org/projects/kaviyesutil/)
 * Found a problem [create an issue](https://github.com/Kaviyes/kaviyesutil/issues/new/choose) here!
 * Create a [pull request](https://github.com/Kaviyes/kaviyesutil/compare) here!
 
