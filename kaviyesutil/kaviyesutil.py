@@ -1,7 +1,7 @@
 # Author Karl Vince Reyes (Kaviyes)
 '''
 ## KAVIYESUTIL
-### Version 2.0.0 Standard Kaviyes utility for python
+### Version 2.0.1 Standard Kaviyes utility for python
 A standard kaviyes utility for python thats ideal for small projects and prototypes.
 
 ----
@@ -10,13 +10,11 @@ Check documentations [here!](https://github.com/Kaviyes/kaviyesutil)
 
 '''
 
-
+from getpass import getpass as _getpass
+from time import sleep as _sleep
 import os as _os
 import datetime as _datetime
 import sys as _sys
-
-from getpass import getpass as _getpass
-from time import sleep as _sleep
 
 def printc(
         text: object = "",
@@ -165,7 +163,7 @@ def countdown(seconds, echo: str = None, endMessage: str = 'Countdown Complete!'
     else:
         print(endMessage)
 
-def cloakedLink(text, url, print: bool = False):
+def cloakedLink(text, url, Print: bool = False):
     '''
     ### CloakedLink
     #### create a visually appealing links
@@ -179,7 +177,7 @@ def cloakedLink(text, url, print: bool = False):
     cloakedLink(printc('Visit Kaviyes on Github!', 'cyan', 'default', 'underlined', ReturnText=True), 'https://github.com/Kaviyes', Print=True)
     ```
     '''
-    if print:
+    if Print:
         print(f"\033]8;;{url}\033\\{text}\033]8;;\033\\")
     else:
         return f"\033]8;;{url}\033\\{text}\033]8;;\033\\"
@@ -439,6 +437,11 @@ def terminal(command):
     '''
     _os.system(command)
 
-def cter():
+def cter(message: object = ""):
     '''Clears the contents of the terminal screen'''
-    _os.system('cls' if _os.name == 'nt' else 'clear')
+    if message:
+        _os.system('cls' if _os.name == 'nt' else 'clear')
+        print(message)
+    else:
+        _os.system('cls' if _os.name == 'nt' else 'clear')
+
