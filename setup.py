@@ -1,21 +1,29 @@
-from setuptools import setup, find_packages
+import io
+import os
+import pathlib
+
+import setuptools
+
+package_root = pathlib.Path(__file__).parent.resolve()
 
 NAME = 'kaviyesutil'
-VERSION = '2.0.1'
+VERSION = '2.1.2'
 DESCRIPTION = "A standard kaviyes utility for python thats ideal for small projects and prototypes."
 AUTHOR = 'Kaviyes'
-AUTHOR_EMAIL = 'kaviyeslabs@proton.me'
+AUTHOR_EMAIL = 'contact.karlvince@gmail.com'
 URL = 'https://github.com/Kaviyes/kaviyesutil'
 LICENSE = 'MIT'
+README = (package_root / "README.md").read_text()
 
-with open('README.md', 'r', encoding='utf-8') as f:
-    LONG_DESCRIPTION = f.read()
+packages = [
+    package for package in setuptools.PEP420PackageFinder.find() if package.startswith("kaviyes")
+]
 
-setup(
+setuptools.setup(
     name=NAME,
     version=VERSION,
     description=DESCRIPTION,
-    long_description=LONG_DESCRIPTION,
+    long_description=README,
     long_description_content_type='text/markdown',
     author=AUTHOR,
     author_email=AUTHOR_EMAIL,
@@ -24,7 +32,7 @@ setup(
     package_data={
         '': ['LICENSE']
     },
-    packages=find_packages(),
+    packages=packages,
     keywords=['utility', 'toolkit'],
     classifiers=[
         'Development Status :: 3 - Alpha',  
@@ -36,6 +44,6 @@ setup(
         'Operating System :: POSIX :: Linux',
         'Operating System :: MacOS :: MacOS X',
     ],
-    install_requires=[ ],
-    python_requires='>=3.10',
+    install_requires=["requests"],
+    python_requires='>=3.9',
 )
