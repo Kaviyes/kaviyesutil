@@ -1,6 +1,6 @@
 [<img src="https://raw.githubusercontent.com/Kaviyes/kaviyesutil/37c00cd0806a99bded88d82c255ae12161ffd6ef/Kaviyesutil.svg" width="385"/>](https://github.com/Kaviyes/kaviyesutil)
 
-![Open Issues](https://img.shields.io/github/issues/Kaviyes/kaviyesutil.svg) ![Python](https://camo.githubusercontent.com/3da9491fa3fce6afca8e32177b260cb87bea5d4dbcc057da64589a94dbc5815a/68747470733a2f2f696d672e736869656c64732e696f2f707970692f707976657273696f6e732f676f6f676c652d67656e657261746976656169) ![Closed Issues](https://img.shields.io/github/issues-closed/Kaviyes/kaviyesutil.svg)
+<br>
 
 A standard kaviyes utility for python thats ideal for small projects and prototypes.
 
